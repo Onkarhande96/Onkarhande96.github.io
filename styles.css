@@ -783,6 +783,41 @@ body {
   margin-top: 4px;
 }
 
+/* FAQ Grid */
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.faq-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 26px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+}
+
+.faq-card:hover {
+  border-color: #CBD5E1;
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.faq-card h4 {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.faq-card p {
+  color: var(--text-body);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .hero-title { font-size: 2.3rem; }
