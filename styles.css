@@ -826,9 +826,132 @@ body {
   .contact-box {
     grid-template-columns: 1fr;
     gap: 28px;
-    padding: 24px;
+    padding: 28px;
   }
   .form-row {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-container {
+    padding: 12px 4%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 4px;
+    gap: 16px;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .section {
+    padding: 55px 0;
+  }
+
+  .hero-section {
+    padding: 50px 4% 45px;
+  }
+
+  .hero-title {
+    font-size: 1.85rem;
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.98rem;
+    margin-bottom: 24px;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 35px;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .hero-stats {
+    gap: 20px;
+    padding-top: 24px;
+  }
+
+  .stat-number {
+    font-size: 1.3rem;
+  }
+
+  .stat-label {
+    font-size: 0.78rem;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+  }
+
+  .section-desc {
+    font-size: 0.95rem;
+  }
+
+  .project-showcase {
+    padding: 20px 16px;
+    border-radius: var(--radius-md);
+  }
+
+  .project-title {
+    font-size: 1.3rem;
+  }
+
+  .project-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .project-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .table-wrapper {
+    max-height: 320px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .table-container-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 10px 14px;
+  }
+
+  .simulator-card {
+    padding: 20px 14px;
+  }
+
+  .services-grid,
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .contact-box {
+    padding: 24px 16px;
+    gap: 30px;
+  }
+
+  .contact-form-card {
+    padding: 20px 14px;
   }
 }
